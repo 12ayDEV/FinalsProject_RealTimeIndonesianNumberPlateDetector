@@ -9,7 +9,7 @@ This application provides a real-time interface for detecting and recognizing In
 ## Features
 
 * **Live Camera Feed**: Select from available cameras connected to your system.
-* **Real-Time Plate Detection**: Uses a YOLOv8 model in ONNX format to detect license plates in each frame.
+* **Real-Time Plate Detection**: Uses a YOLOv5n model in ONNX format to detect license plates in each frame.
 * **Character Recognition (OCR)**: Employs EasyOCR to read the characters and numbers from the detected plate.
 * **Intelligent Text Parsing**:
     * Formats the recognized plate number into the standard Indonesian format (e.g., `B 1234 ABC`).
