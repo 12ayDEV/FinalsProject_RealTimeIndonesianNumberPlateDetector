@@ -366,6 +366,8 @@ class MainWindow(QMainWindow):
         )
 
     def log_debug(self, message: str):
+        if not DEBUG_MODE:
+            return
         timestamp = datetime.datetime.now().strftime("%H:%M:%S.%f")[:-3]
         self.debug_console.append(f"[{timestamp}] {message}")
         self.debug_console.verticalScrollBar().setValue(
